@@ -1,1 +1,27 @@
-.Sidebar {}
+.sidebar{
+  display: flex;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 5555;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.sideBarLogo{
+  width: 40px;
+  height: 40px;
+
+}
+.ulLinks >li{
+  transition: 0.5s;
+
+}
+
+.ulLinks > li:hover{
+  background-color: #ae8b0b;
+  transition: 0.5 !important;
+  padding-left: 5px;
+}

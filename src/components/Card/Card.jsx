@@ -1,11 +1,9 @@
 import React from 'react'
 import style from './Card.module.css'
-import img from '../../assets/mlchx21564916997.jpg'
 import { Link } from 'react-router-dom';
 
 
 function Card({ meal }) {
-  console.log(meal);
   return (
     <>
       <div className=" col-lg-3 col-md-4  ">
