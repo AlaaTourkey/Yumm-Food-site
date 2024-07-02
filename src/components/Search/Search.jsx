@@ -31,7 +31,8 @@ function Search() {
       </div>
       <div className="row g-3 text-white">
 
-        {!searchData?<h2>Search For Meal ....</h2> : searchData? searchData.map( (meal,index)=> (<Card key={index} meal={meal}/> ) ) : <Loading/>}
+        {!searchData?<h2>Search For Meal ....</h2> : searchData? searchData.map( (meal,index)=> (
+          <Card key={index} meal={meal}/> ) ) : <Loading/>}
 
 
 

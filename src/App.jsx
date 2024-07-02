@@ -7,6 +7,8 @@ import Contact from './components/Contact/Contact';
 import Layout from './components/Layout/Layout';
 import Itemdetails from './components/Itemdetails/Itemdetails';
 import Search from './components/Search/Search';
+import CategoryDetails from './components/CategoryDetails/CategoryDetails';
+import Ingredients from './components/Ingredients/Ingredients';
 
 
 let routers = createBrowserRouter ([
@@ -16,7 +18,9 @@ let routers = createBrowserRouter ([
     {path: 'home' , element : <Home/>},
     {path: 'about' , element : <About/>},
     {path: 'search' , element : <Search/>},
-    {path: 'category' , element : <Category/>},
+    {path: 'category' , element :<Category/> },
+    {path: '/category/:categoryName' , element :<CategoryDetails/> },
+    {path: 'ingredients' , element :<Ingredients/> },
     {path: 'contact' , element : <Contact/>},
     {path: '/:idMeal' , element : <Itemdetails/>},
   ]}
