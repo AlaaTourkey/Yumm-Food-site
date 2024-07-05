@@ -104,7 +104,7 @@ function Contact() {
 
                 </div>
               </div>
-              <div className="col-md-12  text-center">
+              <div className="col-md-12  mt-4 text-center text-uppercase bounce-top ">
                 <button disabled={!(formik.isValid && formik.dirty)} className="btn btn-outline-danger" type="submit" >Submit</button>
               </div>
             </div>
