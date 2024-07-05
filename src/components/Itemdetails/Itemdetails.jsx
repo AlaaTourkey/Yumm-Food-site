@@ -56,11 +56,13 @@ function Itemdetails() {
           <p><h3> Instructions:</h3> {mealDetails.strInstructions && mealDetails.strInstructions.split(' ').slice(3, 40).join(' ')}</p>
           <h3>Area : {mealDetails.strArea}</h3>
           <h3>Category : {mealDetails.strCategory}</h3>
-          <h3  > Details : <br /> {mealDetails.ingredients?.map( (item, index)=>
-            <span className="badge text-bg-warning m-2 fs-5" key={index}> {item} </span>
+          <h3> Details :  {mealDetails.ingredients?.map( (item, index)=>
+          <div className="d-flex flex-row">
+                <span className="badge text-bg-warning m-1 fs-6" key={index}> {item} </span>
+          </div>
           )}</h3>
-          <a className="btn btn-primary fs-4"  href = { `${mealDetails.strSource}`} target='_blank'> Source  </a>
-          <a className="btn btn-danger fs-4 mx-3"  href = { `${mealDetails.strYoutube}`} target='_blank' > Youtyube  </a>
+          <a className="btn btn-primary fs-4 m-1"  href = { `${mealDetails.strSource}`} target='_blank'> Source  </a>
+          <a className="btn btn-danger fs-4 m-1"  href = { `${mealDetails.strYoutube}`} target='_blank' > Youtube  </a>
 
         </div>
       </div>

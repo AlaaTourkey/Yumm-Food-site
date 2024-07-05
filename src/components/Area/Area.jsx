@@ -27,12 +27,12 @@ function Area() {
             <Loading />
           ) : (
             area.map((item, index) => (
-              <div key={index} className="col-3">
+              <div key={index} className="col-4">
                 <Link to={`/areas/${item.strArea}`}>
-                  <div className="p-3 cursor-pointer rounded-2 bg-body-secondary">
+                  <div className="p-1 cursor-pointer rounded-2 bg-body-secondary">
                     <div className="d-flex flex-column align-items-center">
-                      <i className="fas fa-home fs-3"></i>
-                      <h4 className="fw-bold">{item.strArea}</h4>
+                      <i className="fas fa-home fs-5"></i>
+                      <p  className="fw-bold h6 ">{item.strArea}</p>
                     </div>
                   </div>
                 </Link>

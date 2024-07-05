@@ -6,8 +6,11 @@ import Sidebar from '../Sidebar/Sidebar'
 function Layout() {
   return (
     <>
+    <div className="w-25">
+
     <Sidebar/>
-    <div className="container">
+    </div>
+    <div className="container w-75">
       <Outlet></Outlet>
     </div>
     </>
